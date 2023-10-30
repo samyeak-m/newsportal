@@ -65,11 +65,11 @@ while ($row=mysqli_fetch_array($query)) {
             <div class="card-body">
               <h2 class="card-title"><?php echo htmlentities($row['posttitle']);?></h2>
                  <p><!--category-->
- <a class="badge bg-secondary text-decoration-none link-light" href="category.php?catid=<?php echo htmlentities($row['cid'])?>" style="color:#fff"><?php echo htmlentities($row['category']);?></a>
+ <a class="badge bg-secondary text-decoration-none link-light" href="category.php?catid=<?php echo htmlentities($row['cid'])?>" style="color:#fff;font-weight:400"><?php echo htmlentities($row['category']);?></a>
 <!--Subcategory--->
-  <a class="badge bg-secondary text-decoration-none link-light"  style="color:#fff"><?php echo htmlentities($row['subcategory']);?></a></p>
+  <a class="badge bg-secondary text-decoration-none link-light"  style="color:#fff;font-weight:400"><?php echo htmlentities($row['subcategory']);?></a></p>
        
-              <a href="news-details.php?nid=<?php echo htmlentities($row['pid'])?>" class="btn btn-primary">Read More &rarr;</a>
+              <a href="news-details.php?nid=<?php echo htmlentities($row['pid'])?>" class="btn btn-primary" style="font-weight:600">Read More &rarr;</a>
             </div>
             <div class="card-footer text-muted">
               Posted on <?php echo htmlentities($row['postingdate']);?>
